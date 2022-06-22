@@ -24,10 +24,12 @@ fetch("http://localhost:8000/api/paises")
                 pais.push(datos_obtenidos.nombre);
                 capit.push(datos_obtenidos.capital);
                 idi.push(datos_obtenidos.idioma);
+                // Se lleva un contador de la cantidad de países
                 cont = cont + 1;
             }
         });
         let text = ''
+        // Se van guardando los datos de cada país en una nueva fila de la tabla
         for (var i = 0; i < cont; i++) {
             text = text+
         `
@@ -40,8 +42,5 @@ fetch("http://localhost:8000/api/paises")
         `
         }
         document.getElementById("cuerpo").innerHTML = text;
-
-
+        // Solo se hace un innerHTML y se insertan todas las filas en el cuerpo de la tabla
     });
-
-// document.getElementById("tablita").innerHTML=`Hola número`+2+`Co`;

@@ -37,7 +37,7 @@ fetch("http://localhost:8000/api/paises")
 
         // Estilos de la gráfica
         var layout = {
-            title: "Estudiantes Por Programa",
+            title: "Población por país",
             font: {
                 family: "Times New Roman",
             },
